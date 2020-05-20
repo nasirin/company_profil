@@ -6,31 +6,31 @@ class Welcome extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view('home');
+		$this->template->load('dashboard','menu/home');
 	}
 
 	public function about()
 	{
-		$this->load->view('about');
+		$this->template->load('dashboard','menu/about');
 	}
 
 	public function harga()
 	{
-		$this->load->view('harga');
+		$this->template->load('dashboard','menu/harga');
 	}
 
 	public function blog()
 	{
-		$this->load->view('blog');
+		$this->template->load('dashboard','menu/blog');
 	}
 
 	public function contact()
 	{
-		$this->load->view('contact');
+		$this->template->load('dashboard','menu/contact');
 	}
 
 	public function blog_single()
 	{
-		$this->load->view('blog-single');
+		$this->template->load('dashboard','menu/blog-single');
 	}
 }
