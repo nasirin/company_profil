@@ -8,7 +8,7 @@
             <ul>
                 <li class="<?= $this->uri->segment('1') == "" ? 'active' : '' ?>"><a href="<?= base_url() ?>#hero">Home</a></li>
                 <li class="<?= $this->uri->segment('2') == 'about' ? 'active' : '' ?>"><a href="<?= site_url('welcome/about') ?>">About Us</a></li>
-                <li><a href="#features">Service</a></li>
+                <li class="<?= $this->uri->segment('2') == '#features' ? 'active' : '' ?>"><a href="<?= base_url()?>#features">Service</a></li>
                 <li class="<?= $this->uri->segment('2') == 'harga' ? 'active' : '' ?>"><a href="<?= base_url('welcome/harga') ?>">Pricing</a></li>
                 <li class="<?= $this->uri->segment('2') == 'blog' ? 'active' : '' ?>"><a href="<?= base_url('welcome/blog') ?>">Blog</a></li>
                 <li class="<?= $this->uri->segment('2') == 'contact' ? 'active' : '' ?>"><a href="<?= base_url('welcome/contact') ?>">Contact</a></li>
